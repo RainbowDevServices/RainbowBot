@@ -44,7 +44,8 @@ ${pu.config.name ? `**Name:** ${pu.config.name}` : ""}${pu.config.description ? 
         .setAuthor(`${message.author.username}`, message.author.displayAvatarURL())
         .setTitle("Moderation bot")
         .setThumbnail(client.user.displayAvatarURL())
-        .setDescription(`Type \`help [command]\` for help with a command \n\n ${client.prefix}help moderation - **Moderator Commands.** \n ${client.prefix}help fun - **Fun commands** \n ${client.prefix}help management - **Management Commands**  \n${client.prefix}help misc - **Misc Commands.** \n ${client.prefix}help info - **Shows information commands.**  \n ${client.prefix}help config - **Shows all config setting commands**`, true)
+        .setDescription(`Type \`help [command]\` for help with a command \n\n ${client.prefix}help moderation - **Moderator Commands.** \n ${client.prefix}help fun - **Fun commands** \n ${client.prefix}help management - **Management Commands**  \n${client.prefix}help misc - **Misc Commands.** \n ${client.prefix}help info - **Shows information commands.**  \n ${client.prefix}help config - **Shows all config setting commands**
+${client.prefix} helpserver - **Sends the link for our support server**`, true)
         .setFooter(`${message.author.tag}`, message.author.displayAvatarURL())
     message.channel.send(embed)
     };
